@@ -2,7 +2,7 @@
 
 `NOTE: kaniko is not an officially supported Google product`
 
-[![Build Status](https://travis-ci.com/GoogleContainerTools/kaniko.svg?branch=master)](https://travis-ci.com/GoogleContainerTools/kaniko) [![Go Report Card](https://goreportcard.com/badge/github.com/GoogleContainerTools/kaniko)](https://goreportcard.com/report/github.com/GoogleContainerTools/kaniko)
+[![Build Status](https://travis-ci.com/GoogleContainerTools/kaniko.svg?branch=master)](https://travis-ci.com/GoogleContainerTools/kaniko) [![Go Report Card](https://goreportcard.com/badge/github.com/ducesoft/kaniko)](https://goreportcard.com/report/github.com/ducesoft/kaniko)
 
 ![kaniko logo](logo/Kaniko-Logo.png)
 
@@ -770,7 +770,7 @@ You may be able to achieve the same default seccomp profile that Docker uses in 
 If your builds are taking long, we recently added support to analyze kaniko function
 calls using [Slow Jam](https://github.com/google/slowjam)
 To start profiling,
-1. Add an environment variable `STACKLOG_PATH`  to your [pod definition](https://github.com/GoogleContainerTools/kaniko/blob/master/examples/pod-build-profile.yaml#L15).
+1. Add an environment variable `STACKLOG_PATH`  to your [pod definition](https://github.com/ducesoft/kaniko/blob/master/examples/pod-build-profile.yaml#L15).
 2. If you are using the kaniko `debug` image, you can copy the file in the `pre-stop` container lifecyle hook.
 
 ## Comparison with Other Tools
@@ -843,4 +843,4 @@ file are made and when the `mtime` is updated. This means:
   which will still be correct, but it does affect the number of layers.
 
 _Note that these issues are currently theoretical only. If you see this issue occur, please
-[open an issue](https://github.com/GoogleContainerTools/kaniko/issues)._
+[open an issue](https://github.com/ducesoft/kaniko/issues)._

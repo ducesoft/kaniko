@@ -23,8 +23,8 @@ import (
 	"os"
 	"path"
 
-	"github.com/GoogleContainerTools/kaniko/pkg/config"
-	"github.com/GoogleContainerTools/kaniko/pkg/image/remote"
+	"github.com/ducesoft/kaniko/pkg/config"
+	"github.com/ducesoft/kaniko/pkg/image/remote"
 	"github.com/google/go-containerregistry/pkg/name"
 	v1 "github.com/google/go-containerregistry/pkg/v1"
 	"github.com/google/go-containerregistry/pkg/v1/tarball"
@@ -90,12 +90,12 @@ func writeBufsToFile(cachePath string, tarBuf, manifestBuf *bytes.Buffer) error 
 }
 
 // FetchRemoteImage retrieves a Docker image manifest from a remote source.
-// github.com/GoogleContainerTools/kaniko/image/remote.RetrieveRemoteImage can be used as
+// github.com/ducesoft/kaniko/image/remote.RetrieveRemoteImage can be used as
 // this type.
 type FetchRemoteImage func(image string, opts config.RegistryOptions, customPlatform string) (v1.Image, error)
 
 // FetchLocalSource retrieves a Docker image manifest from a local source.
-// github.com/GoogleContainerTools/kaniko/cache.LocalSource can be used as
+// github.com/ducesoft/kaniko/cache.LocalSource can be used as
 // this type.
 type FetchLocalSource func(*config.CacheOptions, string) (v1.Image, error)
 

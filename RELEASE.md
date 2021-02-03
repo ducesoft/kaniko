@@ -18,26 +18,26 @@ Once you have the correct access, you can kick off a release.
 
     In order to release a new version of Kaniko, you will need to first
 
-    a. Create a new branch and bump the kaniko version in [Makefile](https://github.com/GoogleContainerTools/kaniko/blob/master/Makefile#L16)
+    a. Create a new branch and bump the kaniko version in [Makefile](https://github.com/ducesoft/kaniko/blob/master/Makefile#L16)
 
 
     In most cases, you will need to bump the `VERSION_MINOR` number.
     In case you are doing a patch release for a hot fix, bump the `VERSION_BUILD` number.
 
-    b. Run the [script](https://github.com/GoogleContainerTools/kaniko/blob/master/hack/release.sh) to create release notes.
+    b. Run the [script](https://github.com/ducesoft/kaniko/blob/master/hack/release.sh) to create release notes.
     ```
     ./hack/release.sh
     Collecting pull request that were merged since the last release: v1.0.0 (2020-08-18 02:53:46 +0000 UTC)
-    * change repo string to just string [#1417](https://github.com/GoogleContainerTools/kaniko/pull/1417)
-    * Improve --use-new-run help text, update README with missing flags [#1405](https://github.com/GoogleContainerTools/kaniko/pull/1405)
+    * change repo string to just string [#1417](https://github.com/ducesoft/kaniko/pull/1417)
+    * Improve --use-new-run help text, update README with missing flags [#1405](https://github.com/ducesoft/kaniko/pull/1405)
     ...
     Huge thank you for this release towards our contributors: 
     - Alex Szakaly
     - Alexander Sharov
     ```
-    Copy the release notes and update the [CHANGELOG.md](https://github.com/GoogleContainerTools/kaniko/blob/master/CHANGELOG.md) at the root of the repository. 
+    Copy the release notes and update the [CHANGELOG.md](https://github.com/ducesoft/kaniko/blob/master/CHANGELOG.md) at the root of the repository. 
 
-    c. Create a pull request like [this](https://github.com/GoogleContainerTools/kaniko/pull/1388) and get it approved from Kaniko maintainers.
+    c. Create a pull request like [this](https://github.com/ducesoft/kaniko/pull/1388) and get it approved from Kaniko maintainers.
 
 2. Once the PR is approved and merged, create a release tag with name `vX.Y.Z` where
     ```
@@ -68,7 +68,7 @@ docker pull gcr.io/kaniko-project/executor:warmer-vX.Y.Z
 In case the images are still not published, ping one of the kaniko manintainers and they will provide the cloud build trigger logs.
 You can also request read access to the Google `kaniko-project`.
 
-4. Finally, once the images are published, create a release for the newly created [tag](https://github.com/GoogleContainerTools/kaniko/tags) and publish it. 
+4. Finally, once the images are published, create a release for the newly created [tag](https://github.com/ducesoft/kaniko/tags) and publish it. 
 Summarize the change log to mention, 
 - new features added if any
 - bug fixes, 

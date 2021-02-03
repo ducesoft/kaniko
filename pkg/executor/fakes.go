@@ -23,8 +23,8 @@ import (
 	"io"
 	"io/ioutil"
 
-	"github.com/GoogleContainerTools/kaniko/pkg/commands"
-	"github.com/GoogleContainerTools/kaniko/pkg/dockerfile"
+	"github.com/ducesoft/kaniko/pkg/commands"
+	"github.com/ducesoft/kaniko/pkg/dockerfile"
 	v1 "github.com/google/go-containerregistry/pkg/v1"
 	"github.com/google/go-containerregistry/pkg/v1/types"
 )

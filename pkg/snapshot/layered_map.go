@@ -24,8 +24,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/GoogleContainerTools/kaniko/pkg/timing"
-	"github.com/GoogleContainerTools/kaniko/pkg/util"
+	"github.com/ducesoft/kaniko/pkg/timing"
+	"github.com/ducesoft/kaniko/pkg/util"
 	"github.com/sirupsen/logrus"
 )
 

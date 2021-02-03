@@ -24,13 +24,13 @@ ARG TARGETPLATFORM
 RUN [ ! "x" = "x$TARGETPLATFORM" ] && `echo $TARGETPLATFORM |  awk '{split($0,a,"/"); print a[2]}' > /goarch` || echo "$GOARCH"
 RUN echo "I am runninng $TARGETPLATFORM with $(cat /goarch)"
 
-WORKDIR /go/src/github.com/GoogleContainerTools/kaniko
+WORKDIR /go/src/github.com/ducesoft/kaniko
 COPY . .
 
 RUN make GOARCH=$(cat /goarch)
 
 FROM scratch
-COPY --from=build_env /go/src/github.com/GoogleContainerTools/kaniko/out/executor /kaniko/executor
+COPY --from=build_env /go/src/github.com/ducesoft/kaniko/out/executor /kaniko/executor
 COPY files/nsswitch.conf /etc/nsswitch.conf
 COPY files/ca-certificates.crt /kaniko/ssl/certs/
 ENV HOME /root

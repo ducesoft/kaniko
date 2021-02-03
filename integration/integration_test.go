@@ -34,9 +34,9 @@ import (
 	"github.com/google/go-containerregistry/pkg/v1/daemon"
 	"github.com/pkg/errors"
 
-	"github.com/GoogleContainerTools/kaniko/pkg/timing"
-	"github.com/GoogleContainerTools/kaniko/pkg/util"
-	"github.com/GoogleContainerTools/kaniko/testutil"
+	"github.com/ducesoft/kaniko/pkg/timing"
+	"github.com/ducesoft/kaniko/pkg/util"
+	"github.com/ducesoft/kaniko/testutil"
 )
 
 var config *integrationTestConfig
@@ -219,7 +219,7 @@ func getGitRepo() string {
 		}
 		return "github.com/" + repoSlug + "#refs/heads/" + branch
 	}
-	return "github.com/GoogleContainerTools/kaniko"
+	return "github.com/ducesoft/kaniko"
 }
 
 func TestGitBuildcontext(t *testing.T) {

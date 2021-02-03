@@ -23,9 +23,9 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/GoogleContainerTools/kaniko/pkg/config"
-	"github.com/GoogleContainerTools/kaniko/pkg/creds"
-	"github.com/GoogleContainerTools/kaniko/pkg/util"
+	"github.com/ducesoft/kaniko/pkg/config"
+	"github.com/ducesoft/kaniko/pkg/creds"
+	"github.com/ducesoft/kaniko/pkg/util"
 	"github.com/google/go-containerregistry/pkg/name"
 	v1 "github.com/google/go-containerregistry/pkg/v1"
 	"github.com/google/go-containerregistry/pkg/v1/remote"

@@ -34,7 +34,7 @@ import (
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 
-	"github.com/GoogleContainerTools/kaniko/pkg/config"
+	"github.com/ducesoft/kaniko/pkg/config"
 )
 
 // for testing

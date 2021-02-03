@@ -16,7 +16,7 @@
 
 FROM golang:1.14
 ARG GOARCH=amd64
-WORKDIR /go/src/github.com/GoogleContainerTools/kaniko
+WORKDIR /go/src/github.com/ducesoft/kaniko
 RUN echo $GOARCH > /goarch
 
 #This arg is passed by docker buildx & contains the platform info in the form linux/amd64, linux/ppc64le etc.
@@ -63,7 +63,7 @@ COPY . .
 RUN make GOARCH=$(cat /goarch)
 
 FROM scratch
-COPY --from=0 /go/src/github.com/GoogleContainerTools/kaniko/out/executor /kaniko/executor
+COPY --from=0 /go/src/github.com/ducesoft/kaniko/out/executor /kaniko/executor
 COPY --from=0 /usr/local/bin/docker-credential-gcr /kaniko/docker-credential-gcr
 COPY --from=0 /go/src/github.com/awslabs/amazon-ecr-credential-helper/bin/local/docker-credential-ecr-login /kaniko/docker-credential-ecr-login
 COPY --from=0 /usr/local/bin/docker-credential-acr-linux /kaniko/docker-credential-acr

@@ -25,8 +25,8 @@ import (
 	"github.com/moby/buildkit/frontend/dockerfile/instructions"
 	"github.com/moby/buildkit/frontend/dockerfile/parser"
 
-	"github.com/GoogleContainerTools/kaniko/pkg/config"
-	"github.com/GoogleContainerTools/kaniko/testutil"
+	"github.com/ducesoft/kaniko/pkg/config"
+	"github.com/ducesoft/kaniko/testutil"
 )
 
 var (

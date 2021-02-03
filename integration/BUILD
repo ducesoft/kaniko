@@ -9,7 +9,7 @@ go_library(
         "gcs.go",
         "images.go",
     ],
-    importpath = "github.com/GoogleContainerTools/kaniko/integration",
+    importpath = "github.com/ducesoft/kaniko/integration",
     tags = ["manual"],
     visibility = ["//visibility:public"],
     deps = ["//pkg/timing"],

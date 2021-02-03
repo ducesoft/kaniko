@@ -24,10 +24,10 @@ import (
 	"sort"
 	"syscall"
 
-	"github.com/GoogleContainerTools/kaniko/pkg/config"
-	"github.com/GoogleContainerTools/kaniko/pkg/filesystem"
-	"github.com/GoogleContainerTools/kaniko/pkg/timing"
-	"github.com/GoogleContainerTools/kaniko/pkg/util"
+	"github.com/ducesoft/kaniko/pkg/config"
+	"github.com/ducesoft/kaniko/pkg/filesystem"
+	"github.com/ducesoft/kaniko/pkg/timing"
+	"github.com/ducesoft/kaniko/pkg/util"
 
 	"github.com/sirupsen/logrus"
 )

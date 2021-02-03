@@ -29,7 +29,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/GoogleContainerTools/kaniko/pkg/timing"
+	"github.com/ducesoft/kaniko/pkg/timing"
 )
 
 const (

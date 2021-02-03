@@ -23,8 +23,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/GoogleContainerTools/kaniko/pkg/constants"
-	"github.com/GoogleContainerTools/kaniko/pkg/util"
+	"github.com/ducesoft/kaniko/pkg/constants"
+	"github.com/ducesoft/kaniko/pkg/util"
 	"github.com/sirupsen/logrus"
 )
 
